@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Elastislide -->
+    <link rel="stylesheet" href="./css/elastislide.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <!-- Bootsrap - 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Google Fonts Monserat Roboto  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Style  -->
+    
+    <link rel="stylesheet" href="style/style.css">
+    <title>OnlineShop</title>
+</head>
+
+<body>
+
+    <!-- =========   HEADER_START  =========  -->
+    <header class="header" id="header">
+        <div class="header__nav ">
+            <div class="container">
+                <div class="row justify-content-md-between justify-content-center">
+                    <div class="col-lg-4 col-md-6 ">
+                        <div class="lang  mb-0">
+                            <div class="dropdown">
+                                <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Русский
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Узб</a></li>
+                                    <li><a class="dropdown-item" href="#">Фран</a></li>
+                                    <li><a class="dropdown-item" href="#">Англи</a></li>
+                                </ul>
+                            </div>
+                            <div class="number">
+                                <p> <i class="fas fa-phone"></i> 998 90 999 99 99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="header__regis d-flex align-items-center">
+                            <div class="header__modalLink">
+                                <!-- Button trigger modal -->
+                                <a class="link__modal" type="button" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    Вход
+                                </a>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                    <!-- Email input -->
+                                                    <div class="form-outline mb-4">
+                                                        <input type="email" id="form1Example1" class="form-control" />
+                                                        <label class="form-label" for="form1Example1">Email
+                                                            address</label>
+                                                    </div>
+
+                                                    <!-- Password input -->
+                                                    <div class="form-outline mb-4">
+                                                        <input type="password" id="form1Example2"
+                                                            class="form-control" />
+                                                        <label class="form-label" for="form1Example2">Password</label>
+                                                    </div>
+
+                                                    <!-- 2 column grid layout for inline styling -->
+                                                    <div class="row mb-4">
+                                                        <div class="col d-flex justify-content-center">
+                                                            <!-- Checkbox -->
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="form1Example3" checked />
+                                                                <label class="form-check-label" for="form1Example3">
+                                                                    Remember me
+                                                                </label>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col">
+                                                            <!-- Simple link -->
+                                                            <a href="#!">Forgot password?</a>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Submit button -->
+                                                    <button type="submit" class="btn btn-primary btn-block">Sign
+                                                        in</button>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                               <span>Регистрация</span> 
+                            </button>
+  
+                            <!-- Modal -->
+                             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel"> Регистрация </h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">Регистрация</button>
+                                    </div>
+                                    <div class="modal-body">
+                                      ...
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-primary">Save Регистрация</button>
+                                    </div>
+                                  </div>
+                                </div>
+                                                         </div>
+                            <a href="#!" class="btn btn-danger">
+                                <i class="fas fa-shopping-cart"></i>
+                                Карзина
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__slider">
+            <div id="slider_1" class="carousel slide" data-bs-ride="carousel">
+                <div class="slider__menu">
+                    <div class="container">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="#">
+                                <img src="./images/logo.png" alt="">
+                                <span>Style Tour</span>
+                            </a>
+                            <button class="navbar-toggler navbar__btn" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Женский</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Мужеские</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Детский</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Скидки</a>
+                                    </li>
+                                </ul>
+                                <form class="d-flex">
+                                    <input class="form-control me-2" type="search" placeholder="Search"
+                                        aria-label="Search">
+                                    <button class="btn btn-success" type="submit">Search</button>
+                                </form>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#slider_1" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#slider_1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#slider_1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#slider_1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./images/slider-1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Лутшие товары</h5>
+                            <p>лучшие интернет магазины Европы <br> предлагают обувь и одежду для <br> мужчин, женщин и детскую по привлекательной цене</p>
+                            <button class="btn btn-danger">Посмотреть</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/slider-1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Лутшие товары</h5>
+                            <p>лучшие интернет магазины Европы <br> предлагают обувь и одежду для <br> мужчин, женщин и детскую по привлекательной цене</p>
+                            <button class="btn btn-danger">Посмотреть</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/slider-1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Лутшие товары</h5>
+                            <p>лучшие интернет магазины Европы <br> предлагают обувь и одежду для <br> мужчин, женщин и детскую по привлекательной цене</p>
+                            <button class="btn btn-danger">Посмотреть</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/slider-1.jpg" class="d-block w-100" alt="...">
+                         <div class="carousel-caption d-none d-md-block">
+                            <h5>Лутшие товары</h5>
+                            <p>лучшие интернет магазины Европы <br> предлагают обувь и одежду для <br> мужчин, женщин и детскую по привлекательной цене</p>
+                            <button class="btn btn-danger">Посмотреть</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION _ START  -->
+    <section class="category">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 d-flex col-sm-4  col-md-3">
+                    <div class="category_menu d-flex flex-column w-100">
+                        <h2>Все категори <i class="fas fa-angle-double-right"></i></h2>
+                        <ul class="category_list">
+                            <li><a href="#"><i class="fas fa-angle-double-right"></i> Одежда</a></li>
+                            <li><a href="#"><i class="fas fa-angle-double-right"></i> Одежда</a></li>
+                            <li><a href="#"><i class="fas fa-angle-double-right"></i> Одежда</a></li>
+                            <li><a href="#"><i class="fas fa-angle-double-right"></i> Одежда</a></li>
+                            <li><a href="#"><i class="fas fa-angle-double-right"></i> Одежда</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-8 col-md-9 d-flex flex-column align-items-stretch justify-content-sm-between ">
+                    <div class="mini_slide">
+                        <div id="mini_slider" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#mini_slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#mini_slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#mini_slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="./images/min-slid-1.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./images/min-slid.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./images/min-slid-2.jpg" class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sale">
+                        <img src="./images/tovar.png" alt="">
+                        <h2>Скидка на технику</h2>
+                    </div>        
+                </div>
+                <div class="col-lg-3 d-flex d-md-none d-lg-block">
+                    <div class="reklama d-flex h-100">
+                        <img src="./images/reklama.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="credit">
+        <div class="container">
+            <h2  class="credit__title">Товары в кредит</h2>
+            <div class="row">
+                 <div class="col-lg-3 col-md-6 col-sm-6 d-flex justify-content-sm-between ">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/card.png" class="card-img-top" alt="png">
+                        <div class="card-body">
+                          <h5 class="card-title">Коляска для детей</h5>
+                          <p class="card-text">Все товары есть в наличии.</p>
+                          <span class="price">100 000 sum</span>
+                          <div class="serach_icons">
+                            <i class="fas fa-heart"></i>
+                             <a href="#" class="btn btn-success"> <i class="fas fa-shopping-cart"></i> В корзину</a>
+                             <i class="fas fa-search"></i>
+                          </div>
+                        </div>
+                      </div>
+                 </div>   
+                 <div class="col-lg-3 col-md-6 col-sm-6 d-flex justify-content-sm-between">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/card.png" class="card-img-top" alt="png">
+                        <div class="card-body">
+                          <h5 class="card-title">Коляска для детей</h5>
+                          <p class="card-text">Все товары есть в наличии.</p>
+                          <span class="price">100 000 sum</span>
+                          <div class="serach_icons">
+                            <i class="fas fa-heart"></i>
+                             <a href="#" class="btn btn-success"> <i class="fas fa-shopping-cart"></i> В корзину</a>
+                             <i class="fas fa-search"></i>
+                          </div>
+                        </div>
+                      </div>
+                 </div>   
+                 <div class="col-lg-3 col-md-6 col-sm-6 d-flex justify-content-sm-between">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/card.png" class="card-img-top" alt="png">
+                        <div class="card-body">
+                          <h5 class="card-title">Коляска для детей</h5>
+                          <p class="card-text">Все товары есть в наличии.</p>
+                          <span class="price">100 000 sum</span>
+                          <div class="serach_icons">
+                            <i class="fas fa-heart"></i>
+                             <a href="#" class="btn btn-success"> <i class="fas fa-shopping-cart"></i> В корзину</a>
+                             <i class="fas fa-search"></i>
+                          </div>
+                        </div>
+                      </div>
+                 </div>   
+                 <div class="col-lg-3 col-md-6 col-sm-6 d-flex justify-content-sm-between">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/card.png" class="card-img-top" alt="png">
+                        <div class="card-body">
+                          <h5 class="card-title">Коляска для детей</h5>
+                          <p class="card-text">Все товары есть в наличии.</p>
+                          <span class="price">100 000 sum</span>
+                          <div class="serach_icons">
+                            <i class="fas fa-heart"></i>
+                             <a href="#" class="btn btn-success"> <i class="fas fa-shopping-cart"></i> В корзину</a>
+                             <i class="fas fa-search"></i>
+                          </div>
+                        </div>
+                      </div>
+                 </div>   
+                 <div class="col-lg-3 col-md-6 col-sm-6 d-flex justify-content-sm-between">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/card.png" class="card-img-top" alt="png">
+                        <div class="card-body">
+                          <h5 class="card-title">Коляска для детей</h5>
+                          <p class="card-text">Все товары есть в наличии.</p>
+                          <span class="price">100 000 sum</span>
+                          <div class="serach_icons">
+                            <i class="fas fa-heart"></i>
+                             <a href="#" class="btn btn-success"> <i class="fas fa-shopping-cart"></i> В корзину</a>
+                             <i class="fas fa-search"></i>
+                          </div>
+                        </div>
+                      </div>
+                 </div>   
+                 <div class="col-lg-3 col-md-6 col-sm-6 d-flex justify-content-sm-between">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/card.png" class="card-img-top" alt="png">
+                        <div class="card-body">
+                          <h5 class="card-title">Коляска для детей</h5>
+                          <p class="card-text">Все товары есть в наличии.</p>
+                          <span class="price">100 000 sum</span>
+                          <div class="serach_icons">
+                            <i class="fas fa-heart"></i>
+                             <a href="#" class="btn btn-success"> <i class="fas fa-shopping-cart"></i> В корзину</a>
+                             <i class="fas fa-search"></i>
+                          </div>
+                        </div>
+                      </div>
+                 </div>   
+                 <div class="col-lg-3 col-md-6 col-sm-6 d-flex justify-content-sm-between">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/card.png" class="card-img-top" alt="png">
+                        <div class="card-body">
+                          <h5 class="card-title">Коляска для детей</h5>
+                          <p class="card-text">Все товары есть в наличии.</p>
+                          <span class="price">100 000 sum</span>
+                          <div class="serach_icons">
+                            <i class="fas fa-heart"></i>
+                             <a href="#" class="btn btn-success"> <i class="fas fa-shopping-cart"></i> В корзину</a>
+                             <i class="fas fa-search"></i>
+                          </div>
+                        </div>
+                      </div>
+                 </div>   
+                 <div class="col-lg-3 col-md-6 col-sm-6 d-flex justify-content-sm-between">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/card.png" class="card-img-top" alt="png">
+                        <div class="card-body">
+                          <h5 class="card-title">Коляска для детей</h5>
+                          <p class="card-text">Все товары есть в наличии.</p>
+                          <span class="price">100 000 sum</span>
+                          <div class="serach_icons">
+                            <i class="fas fa-heart"></i>
+                             <a href="#" class="btn btn-success"> <i class="fas fa-shopping-cart"></i> В корзину</a>
+                             <i class="fas fa-search"></i>
+                          </div>
+                        </div>
+                      </div>
+                 </div>   
+                 <div class="col-lg-3 col-md-6 col-sm-6 d-flex justify-content-sm-between">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/card.png" class="card-img-top" alt="png">
+                        <div class="card-body">
+                          <h5 class="card-title">Коляска для детей</h5>
+                          <p class="card-text">Все товары есть в наличии.</p>
+                          <span class="price">100 000 sum</span>
+                          <div class="serach_icons">
+                            <i class="fas fa-heart"></i>
+                             <a href="#" class="btn btn-success"> <i class="fas fa-shopping-cart"></i> В корзину</a>
+                             <i class="fas fa-search"></i>
+                          </div>
+                        </div>
+                      </div>
+                 </div>   
+                 <div class="col-lg-3 col-md-6 col-sm-6 d-flex justify-content-sm-between">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/card.png" class="card-img-top" alt="png">
+                        <div class="card-body">
+                          <h5 class="card-title">Коляска для детей</h5>
+                          <p class="card-text">Все товары есть в наличии.</p>
+                          <span class="price">100 000 sum</span>
+                          <div class="serach_icons">
+                            <i class="fas fa-heart"></i>
+                             <a href="#" class="btn btn-success"> <i class="fas fa-shopping-cart"></i> В корзину</a>
+                             <i class="fas fa-search"></i>
+                          </div>
+                        </div>
+                      </div>
+                 </div>   
+                 <div class="col-lg-3 col-md-6 col-sm-6 d-flex justify-content-sm-between">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/card.png" class="card-img-top" alt="png">
+                        <div class="card-body">
+                          <h5 class="card-title">Коляска для детей</h5>
+                          <p class="card-text">Все товары есть в наличии.</p>
+                          <span class="price">100 000 sum</span>
+                          <div class="serach_icons">
+                            <i class="fas fa-heart"></i>
+                             <a href="#" class="btn btn-success"> <i class="fas fa-shopping-cart"></i> В корзину</a>
+                             <i class="fas fa-search"></i>
+                          </div>
+                        </div>
+                      </div>
+                 </div>   
+                 <div class="col-lg-3 col-md-6  col-sm-6 d-flex justify-content-sm-between">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/card.png" class="card-img-top" alt="png">
+                        <div class="card-body">
+                          <h5 class="card-title">Коляска для детей</h5>
+                          <p class="card-text">Все товары есть в наличии.</p>
+                          <span class="price">100 000 sum</span>
+                          <div class="serach_icons">
+                            <i class="fas fa-heart"></i>
+                             <a href="#" class="btn btn-success"> <i class="fas fa-shopping-cart"></i> В корзину</a>
+                             <i class="fas fa-search"></i>
+                          </div>
+                        </div>
+                      </div>
+                 </div>   
+            </div>
+        </div>
+    </section>
+    <div class="bottom">
+        <div class="container">
+            <div class="row d-flex justify-content-center ">
+                <div class="col-3 d-flex justify-content-center">
+                        <div class="one">
+                            <ul class="pagination ">
+                                <li class="page-item active" aria-current="page">
+                                  <span class="page-link">1</span>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============= MAIN_START ============= -->
+   <main class="main" id="main">
+    <div role="tabpanel">
+        <div class="container">
+            <div class="row">
+                   <!-- List group -->
+                <div class="col-12   col-md-12 col-lg-6  ">
+                    <div class="list-group" id="myList" role="tablist">
+                        <a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#home" role="tab">Самые Лутшие</a>
+                        <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#profile" role="tab">Топ 10</a>
+                        <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#messages" role="tab">Популярные</a>
+                        <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#settings" role="tab">Мужиские</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+        <!-- Tab panes -->
+        <div class="tab-content ">
+          <div class="tab-pane active" id="home" role="tabpanel">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-3 col-sm-6">
+                        <div class="card" >
+                            <img src="./images/Rectangle 60.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-3 col-sm-6">
+                        <div class="card" >
+                            <img src="./images/Rectangle 60.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-3 col-sm-6">
+                        <div class="card" >
+                            <img src="./images/Rectangle 60.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-3 col-sm-6">
+                        <div class="card" >
+                            <img src="./images/Rectangle 60.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="tab-pane" id="profile" role="tabpanel">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                      <div class="card" >
+                          <img src="./images/Rectangle 60.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Card</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                      <div class="card" >
+                          <img src="./images/Rectangle 60.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Card</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                      <div class="card" >
+                          <img src="./images/Rectangle 60.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Card</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                      <div class="card" >
+                          <img src="./images/Rectangle 60.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Card</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="messages" role="tabpanel">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                      <div class="card" >
+                          <img src="./images/Rectangle 60.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Card</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                      <div class="card" >
+                          <img src="./images/Rectangle 60.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Card</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                      <div class="card" >
+                          <img src="./images/Rectangle 60.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Card</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                      <div class="card" >
+                          <img src="./images/Rectangle 60.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Card</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="settings" role="tabpanel">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                      <div class="card" >
+                          <img src="./images/Rectangle 60.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Card</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                      <div class="card" >
+                          <img src="./images/Rectangle 60.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Card</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                      <div class="card" >
+                          <img src="./images/Rectangle 60.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Card</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                      <div class="card" >
+                          <img src="./images/Rectangle 60.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Card</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+   </main>
+    <div class="input">
+    <div class="container">
+        <div class="row d-flex align-items-center">
+            <div class="col-lg-4">
+                <div class="main_text">
+                    <h2>Get Discounts and Free Offer</h2>
+                    <p>Get free coupens, discounts and new arivals</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <div class="input_2">
+                    <input type="text" placeholder="Email">
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <div class="input_2">
+                    <input type="text" placeholder="Name">
+                </div>
+            </div>
+            <div class="col-lg-2 d-flex justify-content-center">
+                <div class="btn">
+                    <button>Subcribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- ============= Carousel_Slider ============= -->
+    <div class="carousel_second">
+       <div class="container">
+           <div class="row d-flex justify-content-between ">
+               <div class="col-lg-2 col-4 d-flex justify-content-center"><a href="#"><img src="./images/partner1 1.png" alt=""></a></div>
+               <div class="col-lg-2 col-4 d-flex justify-content-center"><a href="#"><img src="./images/partner1 1.png" alt=""></a></div>
+               <div class="col-lg-2 col-4 d-flex justify-content-center"><a href="#"><img src="./images/partner1 1.png" alt=""></a></div>
+               <div class="col-lg-2 col-4 d-flex justify-content-center"><a href="#"><img src="./images/partner1 1.png" alt=""></a></div>
+               <div class="col-lg-2 col-4 d-flex justify-content-center"><a href="#"><img src="./images/partner1 1.png" alt=""></a></div>
+               <div class="col-lg-2 col-4 d-flex justify-content-center"><a href="#"><img src="./images/partner1 1.png" alt=""></a></div>
+           </div>
+       </div>
+    </div>
+
+
+    <!-- ============ Footer_Start ============ -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                    <div class="info">
+                        <div class="row">
+                            <div class="col-lg-3 col-6 col-md-3">
+                                <div class="footer_info">
+                                    <h2>Help & Info</h2>
+                                    <ul>
+                                        <li><a href="#"> Delivery</a></li>
+                                        <li><a href="#"> Returns & Refunds</a></li>
+                                        <li><a href="#"> Contact Us</a></li>
+                                        <li><a href="#"> Contact Us</a></li>
+                                        <li><a href="#"> Track your Order</a></li>
+                                        <li><a href="#"> Reglaze Service</a></li>
+                                        <li><a href="#"> Lens Price Comparison</a></li>
+                                        <li><a href="#"> A - Z Brands</a></li>
+                                        <li><a href="#"> FAQ's</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6 col-md-3">
+                                <div class="footer_info">
+                                    <h2>Help & Info</h2>
+                                    <ul>
+                                        <li><a href="#"> Delivery</a></li>
+                                        <li><a href="#"> Returns & Refunds</a></li>
+                                        <li><a href="#"> Contact Us</a></li>
+                                        <li><a href="#"> Contact Us</a></li>
+                                        <li><a href="#"> Track your Order</a></li>
+                                        <li><a href="#"> Reglaze Service</a></li>
+                                        <li><a href="#"> Lens Price Comparison</a></li>
+                                        <li><a href="#"> A - Z Brands</a></li>
+                                        <li><a href="#"> FAQ's</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6 col-md-3">
+                                <div class="footer_info">
+                                    <h2>Help & Info</h2>
+                                    <ul>
+                                        <li><a href="#"> Delivery</a></li>
+                                        <li><a href="#"> Returns & Refunds</a></li>
+                                        <li><a href="#"> Contact Us</a></li>
+                                        <li><a href="#"> Contact Us</a></li>
+                                        <li><a href="#"> Track your Order</a></li>
+                                        <li><a href="#"> Reglaze Service</a></li>
+                                        <li><a href="#"> Lens Price Comparison</a></li>
+                                        <li><a href="#"> A - Z Brands</a></li>
+                                        <li><a href="#"> FAQ's</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6 col-md-3">
+                                <div class="social">
+                                    <h2>Follow us</h2>
+                                    <div class="footer_social">
+                                        <a href="#"><i class="fab fa-facebook"></i></a>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                        <a href="#"><i class="fab fa-telegram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/modernizr.custom.17475.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./js/jquery.elastislide.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
